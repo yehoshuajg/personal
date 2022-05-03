@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yehoshua Ghitis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="burger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                Yehoshua
+            </div>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="#">Home</a></li>
+                <li class="nav-link"><a href="#">About</a></li>
+                <li class="nav-link"><a href="#">Portfolio</a></li>
+                <li class="nav-link"><a href="https://github.com/yehoshuajg">Github</a></li>
+            </ul>
+            <label for="nav-menu1" id="nav-icon1">
+                <input type="checkbox" id="nav-menu1" class="hidden" onChange="handleChecked(this);">
+                <div id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+        </nav>
+    </header>
+    <main>
+        <div class="text-box">
+            <h1>I'm <noscript>Yehoshua Ghitis</noscript> <span class="auto-input"></span>
+            </h1>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam praesentium suscipit repellendus odit consequuntur! </p>
+            <a href="">Contact me</a>
+            <a href="" class="btn">Download CV</a>
+        </div>
+        <img src="dusan-veverkolog-nOsJYzXEG98-unsplash.jpg" alt="Picture of Yehoshua" class="usr-img">
+    </main>
+
+    <script>
+        let typed = new Typed(".auto-input",{
+            strings: ["Yehoshua Ghitis", "A Web Developer"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+
+    </script>
+
+</body>
+</html>
